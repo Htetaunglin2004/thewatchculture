@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" class="md:snap-y md:snap-mandatory snap-none  m-0  overflow-x-hidden lg:overflow-visible ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Watch Culter</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="media/logo.jpg" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Roboto:wght@400;500;700;900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            overflow-x: hidden;
+        }
+     
+        .britain{
+            font-family: 'Pacifico', cursive;
+        }
+
+        .nav-font {
+            font-family: 'Roboto', sans-serif;
+
+        }
+        .nav-font-big{
+            
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .filter-shodow {
+            filter: drop-shadow(5px 5px 10px #000000);
+        }
+
+        
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        .ig1{
+          background-image: linear-gradient(to left, var(--tw-gradient-stops));
+          --tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: rgb(239 68 68 / 0)  var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), #ef4444 var(--tw-gradient-via-position), var(--tw-gradient-to);
+    --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
+        }
+        
+  
+        :hover.ig{
+          background-image: linear-gradient(to left, var(--tw-gradient-stops));
+          --tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: rgb(239 68 68 / 0)  var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), #ef4444 var(--tw-gradient-via-position), var(--tw-gradient-to);
+    --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
+        }
+
+        .custom-font {
+      @apply text-xs; /* Start with the smallest available size */
+      font-size: 0.7rem; /* Additional reduction in font size */
+    }
+    
+    
+      </style>
+   
+</head>
+<body class="m-0 overflow-x-hidden">
+  <section class="relative all-container">
+
+  <!--nav for mobile -->
+  <nav class="md:hidden">
+    <div class="flex justify-between px-5  bg-zinc-900  text-orange-300 text-xl">
+      <h1 class="nav-font-big">TWC</h1>
+      
+      <a  class="fixed right-5 z-50"><i class="fa-solid fa-bars-staggered cursor-pointer  text-orange-200  hover:text-slate-50 transition ease-out duration-700" id="openMenu"></i></a>
+    
+  </nav>
+  
+
+  
+  <div id="menu" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+    <div class="bg-green-900 opacity-90 text-white w-4/5 max-w-sm p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg shadow-lg">
+      <ul >
+        <li class="text-center"><a href="#home" class="menu-link block py-2 px-4 hover:bg-green-800">Home</a></li>
+        <li class="text-center"><a href="#about" class="menu-link block py-2 px-4 hover:bg-green-800">About</a></li>
+        <li class="text-center"><a href="#service" class="menu-link block py-2 px-4 hover:bg-green-800">Service</a></li>
+        <li class="text-center"><a href="#fav" class="menu-link block py-2 px-4 hover:bg-green-800">Customer Favorites</a></li>
+        <li class="text-center"><a href="#contact" class="menu-link block py-2 px-4 hover:bg-green-800">Contact Us</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  
+<!-- home section -->
+
+ <section class="md:snap-start snap-none" id="home">
+<!-- nav bar -->
+
+<nav class="nav-font-big text-white pt-5  bg-zinc-900   ">
+    <div class="w-screen hidden justify-evenly items-center md:flex">
+        <div>
+            <ul class="space-x-4">
+                <li class="inline-block">
+                    <a class="px-3 py-2 text-orange-200  hover:text-slate-50 transition ease-out duration-700" href="#home">Home</a>
+                </li>
+                <li class="inline-block">
+                    <a class="px-3 py-2 text-orange-200  hover:text-slate-50 transition ease-out duration-700" href="#about">About</a>
+                </li>
+                <li class="inline-block">
+                    <a class="px-3 py-2 text-orange-200  hover:text-slate-50 transition ease-out duration-700" href="#service">Service</a>
+                </li>
+            </ul>
+        </div>
+        <div >
+            <h3 class="text-3xl text-orange-200">TWC</h3>
+        </div>
+          <div>
+            <ul class="space-x-4">
+                <li class="inline-block">
+                    <a class="px-3 py-2 text-orange-200  hover:text-slate-50 transition ease-out duration-700" href="#fav">Customer Favorite</a>
+                </li>
+                <li class="inline-block">
+                    <a class="px-3 py-2 text-orange-200 hover:text-slate-50 transition ease-out duration-700" href="#contact">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- nav end -->
+<section class=" bg-zinc-900 w-screen h-auto pt-5  md:pt-32 flex   justify-around  " >
+<aside class="w-96 h-auto pl-5 md:pl-0  pb-10 ">
+<h1 class="text-orange-200  md:text-4xl text-xl  nav-font-big">The Watch Culture</h1>
+<br>
+<p class="md:text-xl text-white">Find luxury at The Watch Culture, your destination for authentic elegance in Myanmar's timepieces. Experience sophistication and heritage in every watch we offer.</p>
+<br>
+<br>
+<a class=" inline-block md:py-3 md:px-14 py-2 px-5 bg-orange-200   transition-transform duration-500 ease-out transform hover:shadow-white hover:-translate-y-1 font-bold text-gray-950 " href="#about" >Get Start</a>
+<span class="britain pl-5 text-orange-100 md:text-2xl ">Luxury</span>
+</aside>
+<div class="w-64 relative">
+<div class="lg:w-96 md:w-72 mt-5   absolute z-10 " id="watch-container">
+    <img  class="w-full h-auto object-cover filter-shodow " src="media/casiowatch.png" alt="watch" id="orange">
+</div>
+</div>
+</section>
+</section>
+<!-- home end -->
+
+
+<!--about start-->
+<section class="pt-36 bg-cover bg-center relative  bg-no-repeat  md:snap-start transition-colors duration-700 ease-out w-auto h-screen " id="about" style="background-image: url('media/men2.jpg');">
+    <div class=" inset-0 md:absolute bg-slate-300  transition-all ease-out duration-500 z-0" id="overlay"></div>
+    <div class=" inset-0 md:hidden absolute bg-green-900 opacity-40 transition-all ease-out duration-500 z-0" ></div>
+
+    <div class="w-screen h-auto flex justify-between">
+    
+   <div class="relative z-10 md:-mt-10  w-1/2 text-center ml-10 text-white  font-serif" data-aos="fade-right"  data-aos-duration="1000" >
+    <h1 class=" lg:text-5xl md:text-3xl text-2xl   mb-2 font-bold">The Art of Time</h1><br>
+    <p class="font-bold text-xs md:hidden">"The Watch Culture offers exquisite watches in Myanmar's cities, inviting you to step into stories of craftsmanship and elegance. Beyond selling watches, we celebrate the artistry of time, cherishing every moment as we share its enchantment."</p>
+    
+    
+      <p class="hidden font-bold md:text-xs lg:text-base md:block">Nestled in Myanmar's lively cities is a special place where time becomes more than just hours passing by—it's The Watch Culture. Born in 2020, it has been a part of our days for nearly four years, bringing us lovely, fancy watches.
+
+        At The Watch Culture, time isn't just something we look at; it's something we treasure. Each watch tells a tale—a tale of skilled hands, dedication, and timeless beauty.
+        
+        Our shops in Yangon and Mandalay aren't just regular stores; they're gateways to a different world. When you step inside, you don't just see watches; you feel stories, stories of grace and history with every tick.
+        
+        What makes us special isn't just the amazing watches we sell; it's the care we put into each one. The Watch Culture isn't only about luxury; it's about cherishing time's melody.
+        
+        As we get closer to our fourth year, our goal remains the same—to keep sharing the wonder of time, inviting everyone to enjoy a world where time isn't just fleeting, but everlasting.
+        
+        The Watch Culture isn't just a store; it's a tribute to the artistry of time, an ode to the finer things, and a celebration of the beauty of time.</p>
+</div>
+    <div class="lg:w-72 md:w-52 sm:w-44 w-28  -translate-y-6 sm:-translate-y-0 float-right relative z-10">
+        <img class=" w-full h-auto object-cover filter-shodow rotate-12" src="media/watch.png" alt="casio">
+    </div>
+   
+</div>
+</section>
+<!--about end-->
+
+
+<!--service-->
+<section class=" h-screen  bg-cover bg-center relative  bg-no-repeat md:snap-start"  id="service" style="background-image: url(media/twc.jpg);">
+    <div class="absolute inset-0 transition-all ease-out duration-500 z-0 opacity-80 bg-gradient-to-b from-green-900 to-slate-400" id="overlay-red"></div>
+    <div class="flex justify-center w-screen items-center pt-14 relative " id="container">
+        <div class="w-60 relative sm:translate-x-80  transition-all ease-out duration-700 sm:translate-y-20" id="watch-l">
+            <img src="media/orient.png" alt="watchone" class="w-full h-auto object-cover " >
+        </div>
+        <div class="w-56 relative z-50 transition-all ease-out translate-y-5 duration-700 " id="watch-c">
+            <img src="media/seiko_center.png" alt="watchtwo" class="w-full h-auto object-cover " >
+        </div>
+        <div class="w-56 relative sm:-translate-x-80 opacity-0 transition-all ease-out duration-700 sm:translate-y-20" id="watch-r">
+            <img src="media/seiko_gold.png" alt="watchthree" class="w-full h-auto object-cover " >
+        </div>
+    </div>
+    <section>
+        <div class="z-50 relative pt-10 flex flex-col items-center space-y-2">
+            <h1 class="nav-font-big text-center  text-5xl  text-orange-200 " style="-webkit-text-stroke:2px black ;">We Serve</h1>
+            <ol class="list-outside pl-[revert] list-disc text-2xl font-bold text-orange-300 transition-all duration-500 ease-out pt-10" id="service-text">
+                <li class="py-1">100% Exclusive Authentic Luxury Watches</li>
+                <li class="py-1">Brings Optimal Performance at a Reasonable Price</li>
+                <li class="py-1">Superior Showroom Services in Yangon and Mandalay</li>
+            </ol>
+        </div>
+    </section>
+</section>
+<!--service section end-->
+
+
+
+<!--customer fav start-->
+<section class="md:snap-start relative" id="fav">
+<div class="bg-green-950 transition-all ease-out duration-700" id="fav-div">
+<h1 class="nav-font-big text-white py-10 text-3xl text-center transition-all ease-out duration-700 " id="fav-txt">Customer Favorite</h1>
+<div class="container mx-auto p-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 transition-all ease-out duration-300 opacity-5" id="grid-container">
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/170078705874054.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787020703459.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787094287046.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787144517088.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787249303409.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787290103490.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787304626914.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787311994647.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787346810261.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787344336637.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787294174353.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/0-02-06-38432a3e99a4aaf9cd202b0b59eb81bd059c809e7bb3b9977a9cc1a76d695fed_84163905e4a22c84.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media\1700787312718194.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787260865922.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787289607233.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787312376052.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787305811781.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/0-02-06-08c9def01374667882baf9e046774efee20eb788ab2f1627d857c0e91f67644f_d194815b6ddf03ec.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/17007869458860.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/1700787292470806.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/0-02-06-7da02071f671dc54add3457d7cc435f398b9d034c65cde15b40a3ab8a47eb613_8899fabf52d17d1f.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/0-02-06-fe74a15f731e5aafbd674df2f85d9edc9ff70020170752b2ac5540b64f03a827_981362551182a5ab.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/0-02-06-1e83d62c282eb377069a065b085682e5522c94275b2adcd862955802174fcf41_4c3e48d68db28e7.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="media/0-02-06-6fc0c034e3535f154aa4e798e9c58b079d2d2669bb8900f889627d9867122ba1_9ecc3e28e1548852.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section> 
+<!--fav sectionh end-->
+
+
+
+<!--contact section start-->
+<section class="md:snap-start h-auto w-screen" id="contact">
+  <h1 class="text-center pt-16 text-4xl  text-green-900 nav-font-big"><i class="fa-solid fa-location-dot text-6xl mx-4"></i>   Our Location</h1>
+  
+  <div class="container mx-auto pt-10 relative">
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+    <div class="col-span-2 rounded-xl overflow-x-hidden md:block hidden">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.1060550795414!2d96.09003517449285!3d21.968892354827748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6dd59315f6f3%3A0xa7e25602b7a0fa67!2sThe%20Watch%20Culture%20TWC!5e0!3m2!1sen!2smm!4v1701014623454!5m2!1sen!2smm" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mx-auto"></iframe>
+    </div>
+
+    <div class="col-span-2 rounded-xl overflow-x-hidden block md:hidden">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7400.2123891546435!2d96.09261!3d21.968887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6dd59315f6f3%3A0xa7e25602b7a0fa67!2sThe%20Watch%20Culture%20TWC!5e0!3m2!1sen!2smm!4v1701269086155!5m2!1sen!2smm" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mx-auto"></iframe>
+    </div>
+
+    <div class="">
+      <h1 class="text-center md:text-left md:text-2xl text-xl font-serif font-semibold ">Mandalay Showroom</h1>
+      <br>
+      <p class="font-mono font-semibold"><i class="fa-solid fa-shop text-red-600 pr-5 text-2xl"></i>No(56). 35 Street, <br> Btw 74x75, Chan Aye Tha San Township, Mandalay</p>
+      <br>
+      <i class="fa-solid fa-phone inline  text-red-600 text-3xl"></i><p class="font-mono inline-block pl-5    font-semibold">+959 769232216 <br>+959 777059007</p>
+    </div>
+
+    <div >
+      <h1 class="md:text-2xl text-xl text-center md:text-left   font-serif font-semibold">Yangon Showroom</h1>
+      <br>
+      <p class="font-mono font-semibold"><i class="fa-solid fa-shop text-red-600 pr-5  text-2xl"></i>No(50). 21 Street <br> (Lower Blk), Latha Township, Yangon</p>
+      <br>
+      <i class="fa-solid fa-phone inline  text-red-600 text-3xl"></i><p class="md:mt-6  lg:mt-0  mt-6 font-mono inline-block pl-5    font-semibold">+959 795941773 <br>+959 788222956</p>
+    </div>
+  </div>
+  </div>
+  <div class="grid grid-cols-3 md:hidden text-center pt-5">
+    <!-- Displayed only on mobile (hidden on medium screens and above) -->
+    <div class=" h-16 bg-green-950 col-span-3 "><h1 class="text-xl font-bold pt-4 text-white">Connect With Us On <i class="fa-solid fa-angles-right pl-5 text-2xl "></i></h1></div>
+    <a href="https://www.facebook.com/thewatchculturemmr"  target="_blank" class="h-16   text-white  bg-blue-950  transition-all ease-in-out "><h1 class="sm:text-xl text-lg font-bold pt-4  transition-all ease-in-out duration-700">Facebook<i class="fa-brands fa-square-facebook pl-4 text-2xl"></i></h1></a>
+    <a href="https://instagram.com/thewatchculturetwc?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="h-16 bg-gradient-to-l ig1  text-black transition-all ease-in  text-lg font-bold "><h1 class=" pt-4  duration-700">Instagram<i class="fa-brands fa-instagram pl-3 text-2xl"></i></h1></a>
+    <a href="mailto:info.sisein@gmail.com" target="_blank" class="h-16 text-black transition-all ease-in-out bg-slate-400"><h1 class="text-lg font-bold pt-4 transition-all ease-in-out  duration-700">Mail<i class="fa-solid fa-envelope pl-3  text-2xl"></i></h1></a>
+  </div>
+
+  <div class=" grid-cols-3 md:grid-cols-4 gap-0 hidden md:grid h-auto pt-20 text-center">
+    <!-- Visible on medium screens and above (hidden on mobile) -->
+    <div class=" h-16 bg-green-950"><h1 class="lg:text-xl md:text-bold  font-bold pt-4 text-white">Connect With Us On <i class="fa-solid fa-angles-right pl-5 md:text-base lg:text-2xl "></i></h1></div>
+    <a href="https://www.facebook.com/thewatchculturemmr"  target="_blank" class="h-16  text-orange-300 hover:text-white hover:bg-blue-950 bg-green-950 transition-all ease-in-out "><h1 class="text-xl font-bold pt-4  transition-all ease-out">Facebook<i class="fa-brands fa-square-facebook pl-5 text-2xl"></i></h1></a>
+    <a href="https://instagram.com/thewatchculturetwc?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="h-16 hover:bg-gradient-to-l ig  hover:text-black transition-all ease-in   bg-green-950 text-orange-300"><h1 class="text-xl font-bold pt-4 transition-all ease-out">Instagram<i class="fa-brands fa-instagram pl-5 text-2xl"></i></h1></a>
+    <a href="mailto:info.sisein@gmail.com" target="_blank" class="h-16 bg-green-950 text-orange-300 hover:text-black transition-all ease-in-out  hover:bg-slate-400"><h1 class="text-xl font-bold pt-4 transition-all ease-out">Mail<i class="fa-solid fa-envelope pl-5 text-2xl"></i></h1></a>
+  </div>
+
+
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+      <div class="mb-4 md:mb-0 text-center md:text-left md:w-1/2">
+        <p class="text-lg font-bold">The Watch Culture (Twc)</p>
+        <p class="text-sm mt-2">Email: info@thewatchculture.com</p>
+      </div>
+      <div class="flex  justify-center md:justify-end md:w-1/2">
+        <a href="#" class="mx-2 text-sm">Home</a>
+        <a href="#" class="mx-2 text-sm">About</a>
+        <a href="#" class="mx-2 text-sm">Services</a>
+        <a href="#" class="mx-2 text-sm">Customer</a>
+        <a href="#" class="mx-2 text-sm">Favorites</a>
+        <a href="#" class="mx-2 text-sm">Location</a>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p class="text-sm">&copy; 2023 The Watch Culture (Twc). All rights reserved.</p>
+    </div>
+  </footer>
+  
+</section>
+
+
+</section>
+
+
+<script src="main.js"></script>
+<script src="aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/57f8478079.js" crossorigin="anonymous"></script>
+<script>
+    AOS.init();
+  
+</script>
+</body>
+</html>
